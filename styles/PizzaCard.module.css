@@ -1,0 +1,51 @@
+.container {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgb(211, 211, 211);
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.container:hover {
+  scale: 0.9;
+  transition: 1s;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d1411e;
+  margin: 0;
+}
+
+.price {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.desc {
+  margin: 10px 0px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .price,
+  .desc {
+    font-size: 24px;
+  }
+}
